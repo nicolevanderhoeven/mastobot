@@ -4,7 +4,7 @@ const request = require('request');
 const Mastodon = require('mastodon-api');
 
 // Authorize
-const domain = 'https://pkm.social';
+const domain = process.env.DOMAIN;
 const M = new Mastodon({
     client_key: process.env.CLIENT_KEY,
     client_secret: process.env.CLIENT_SECRET,
