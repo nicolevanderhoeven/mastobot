@@ -5,6 +5,7 @@ Mastodon bot for sending Mastodon posts to Readwise.
 
 - A Mastodon account (I use and co-host [pkm.social](https://pkm.social) for free)
 - A Readwise account ([Here's an affiliate link](https://readwise.io/nicole))
+- Familiarity with GitHub, the command line, Node.js
 
 ## Usage
 
