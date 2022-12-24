@@ -1,0 +1,27 @@
+{
+  "name": "mastobot",
+  "version": "0.0.1",
+  "description": "Sends Mastodon posts to Readwise",
+  "main": "bot.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolevanderhoeven/mastobot.git"
+  },
+  "keywords": [
+    "mastodon",
+    "readwise",
+    "nicolevdh"
+  ],
+  "author": "Nicole van der Hoeven",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nicolevanderhoeven/mastobot/issues"
+  },
+  "homepage": "https://github.com/nicolevanderhoeven/mastobot#readme",
+  "dependencies": {
+    "mastodon-api": "^1.3.0"
+  }
+}
