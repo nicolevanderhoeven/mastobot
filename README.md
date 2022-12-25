@@ -1,5 +1,5 @@
 # mastobot
-Mastodon bot for sending Mastodon posts to Readwise.
+Mastodon bot for sending Mastodon posts to Readwise. Check out [my blog post](https://nicolevanderhoeven.com/blog/20221225-mastodon-bot-for-readwise-and-obsidian/) for more details.
 
 ## Pre-requisites
 
