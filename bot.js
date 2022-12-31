@@ -5,6 +5,7 @@ const Mastodon = require('mastodon-api');
 
 // Authorize
 const domain = process.env.DOMAIN;
+const account_name = process.env.ACCOUNT_NAME;
 const M = new Mastodon({
     client_key: process.env.CLIENT_KEY,
     client_secret: process.env.CLIENT_SECRET,
@@ -16,7 +17,7 @@ const M = new Mastodon({
 const listener = M.stream('streaming/user')
 listener.on('message', response => {
     // console.log(response);
-    if (response.event === 'notification' && response.data.type === 'mention' && response.data.account.acct === 'nicole') {    
+    if (response.event === 'notification' && response.data.type === 'mention' && response.data.account.acct === account_name) {
         // fs.writeFileSync(`log/data${new Date().getTime()}.json`, JSON.stringify(response));
         const origPostId = response.data.status.in_reply_to_id;
         const origPosterId = response.data.status.in_reply_to_account_id;
@@ -33,7 +34,7 @@ listener.on('message', response => {
             });
         })
     } else {
-        console.error('Hey, either that\'s not a notification, you didn\'t mention me, or you\'re not Nicole!');
+        console.error('Hey, either that\'s not a notification, you didn\'t mention me, or you\'re not ' . account_name);
     }
 });
 
